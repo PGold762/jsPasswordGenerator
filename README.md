@@ -48,6 +48,8 @@ Used Google a lot for understanding definitions of different function and variab
 
 Used the following to help write code for randommly generating password: [W3Schools] (https://www.w3schools.com/js/js_random.asp)
 
+Using this to help know/understand what functions/methods are available: [tutorialspoint](https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm)
+
 
 
 ## License

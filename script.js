@@ -159,8 +159,6 @@ function passwordPrompt() {
 
     return passwordPrompt;
 
-
-
 } // closing tag for passwordPrompt
 
 // Pick a random element for the password creation
@@ -174,7 +172,20 @@ function passwordRandomizer() {
 // Function to create the password
 function passwordCreate() {
  var passwordCreateOptions = passwordPrompt();
+
+ // Stores password
  var passwordCreateItems = [];
+
+// Stores exact types of characters
+ var exactItems = [];
+
+ // Stores non-exact types of characters
+ var nonexactItems = [];
+
+ // If PasswordCreateOptions exists already, stop the function
+ if (!passwordCreateOptions) return null;
+
+
 
 } //closing tag for passwordCreate
 
