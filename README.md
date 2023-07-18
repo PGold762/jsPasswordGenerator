@@ -1,4 +1,4 @@
-# Challenge 3 - JS Password Generator
+# JS Password Generator
 
 ## Description
 
