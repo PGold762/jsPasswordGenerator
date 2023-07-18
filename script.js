@@ -94,7 +94,7 @@ function passwordPrompt() {
   // Variable to store password length
     var passwordLength = parseInt(
         prompt('Input the amount of characters you would like for the password'),
-        11
+        12
     );
 
     // Conditional to check for the length of the password being a number & prompts user if it is not
@@ -185,8 +185,34 @@ function passwordCreate() {
  // If PasswordCreateOptions exists already, stop the function
  if (!passwordCreateOptions) return null;
 
+ // Conditional combining numbers into the nonexact array and pushing the random numbers into the exactItems array
+ if (passwordCreateOptions.storeNumberCharacters) {
+  nonexactItems = passwordCreateItems.concat(numberCharacters);
+  exactItems.push(passwordRandomizer(numberCharacters));
+  
+ }
+ // Conditional combining uppercharacters into the nonexact array and pushing the random characters into the exactItems array
+ if (passwordCreateOptions.storeUpperCharacters) {
+  nonexactItems = passwordCreateItems.concat(upperCharacters);
+  exactItems.push(passwordRandomizer(upperCharacters));
+  
+ }
 
+ // Conditional combining lowercharacters into the nonexact array and pushing the random lowercharacters into the exactItems array
+ if (passwordCreateOptions.storeLowerCharacters) {
+  nonexactItems = passwordCreateItems.concat(lowerCharacters);
+  exactItems.push(passwordRandomizer(lowerCharacters));
+  
+ }
 
+ // Conditional combining specialcharacters into the nonexact array and pushing the random specialcharacters into the exactItems array
+ if (passwordCreateOptions.storeSpecialCharacters) {
+  nonexactItems = passwordCreateItems.concat(specialCharacters);
+  exactItems.push(passwordRandomizer(specialCharacters));
+  
+ }
+
+ return result.join('');
 } //closing tag for passwordCreate
 
 
