@@ -44,8 +44,6 @@ Screenshot of website:
 
 ## Credits
 
-Used Google a lot for understanding definitions of different function and variable possibilities, like parseInt [Google](https://www.google.com/search?q=what+does+parseint+mean+in+js&rlz=1C1RXQR_enUS992US992&oq=&aqs=chrome.0.35i39i362l8.105735j0j7&sourceid=chrome&ie=UTF-8)
-
 Used the following to help write code for randommly generating password: [W3Schools](https://www.w3schools.com/js/js_random.asp)
 
 Used this to help know/understand what functions/methods are available: [tutorialspoint](https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm)
@@ -53,6 +51,8 @@ Used this to help know/understand what functions/methods are available: [tutoria
 Used the following to understand parseInt even further than Google Search: [W3Schools](https://www.w3schools.com/jsref/jsref_parseint.asp)
 
 Used the following to produce the prompts for character types: [W3Schools](https://www.w3schools.com/jsref/met_win_confirm.asp)
+
+Used the following for more understanding of how arrays can be written and used: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ## License
 

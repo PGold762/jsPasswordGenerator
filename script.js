@@ -84,64 +84,58 @@ function passwordPrompt() {
       storeSpecialCharacters: storeSpecialCharacters,
     };
 
-    return passwordPrompt;
+    return passOptions;
 
 } // closing tag for passwordPrompt
 
 // Pick a random element for the password creation
-function passwordRandomizer() {
-  var randomizerMath = Math.floor(Math.random() * Array.passwordLength);
-  var randomizerItem = arr[randomizerEquation];
+function passwordRandomizer(arr) {
+  var randomizerMath = Math.floor(Math.random() * arr.length);
+  var randomizerItem = arr[randomizerMath];
 
   return randomizerItem;
 }
 
 // Function to create the password
 function passwordCreate() {
- var passwordCreateOptions = passwordPrompt();
+  var passwordCreateOptions = passwordPrompt();
 
- // Stores password
- var passwordCreateItems = [];
+  // Stores password
+  var passwordCreateItems = [];
 
-// Stores exact types of characters
- var exactItems = [];
+  // If PasswordCreateOptions exists already, stop the function
+  if (!passwordCreateOptions) return null;
 
- // Stores non-exact types of characters
- var nonexactItems = [];
+  // Conditional combining numbers into the passwordCreateItems
+  if (passwordCreateOptions.storeNumberCharacters) {
+    passwordCreateItems = passwordCreateItems.concat(numberCharacters);
+  }
 
- // If PasswordCreateOptions exists already, stop the function
- if (!passwordCreateOptions) return null;
+  // Conditional combining uppercharacters into the passwordCreateItems
+  if (passwordCreateOptions.storeUpperCharacters) {
+    passwordCreateItems = passwordCreateItems.concat(upperCharacters);
+  }
 
- // Conditional combining numbers into the nonexact array and pushing the random numbers into the exactItems array
- if (passwordCreateOptions.storeNumberCharacters) {
-  nonexactItems = passwordCreateItems.concat(numberCharacters);
-  exactItems.push(passwordRandomizer(numberCharacters));
-  
- }
- // Conditional combining uppercharacters into the nonexact array and pushing the random characters into the exactItems array
- if (passwordCreateOptions.storeUpperCharacters) {
-  nonexactItems = passwordCreateItems.concat(upperCharacters);
-  exactItems.push(passwordRandomizer(upperCharacters));
-  
- }
+  // Conditional combining lowercharacters into the passwordCreateItems
+  if (passwordCreateOptions.storeLowerCharacters) {
+    passwordCreateItems = passwordCreateItems.concat(lowerCharacters);
+  }
 
- // Conditional combining lowercharacters into the nonexact array and pushing the random lowercharacters into the exactItems array
- if (passwordCreateOptions.storeLowerCharacters) {
-  nonexactItems = passwordCreateItems.concat(lowerCharacters);
-  exactItems.push(passwordRandomizer(lowerCharacters));
-  
- }
+  // Conditional combining specialcharacters into the passwordCreateItems
+  if (passwordCreateOptions.storeSpecialCharacters) {
+    passwordCreateItems = passwordCreateItems.concat(specialCharacters);
+  }
 
- // Conditional combining specialcharacters into the nonexact array and pushing the random specialcharacters into the exactItems array
- if (passwordCreateOptions.storeSpecialCharacters) {
-  nonexactItems = passwordCreateItems.concat(specialCharacters);
-  exactItems.push(passwordRandomizer(specialCharacters));
-  
- }
+  // Generate the password
+  var password = '';
+  for (var i = 0; i < passwordCreateOptions.passwordLength; i++) {
+    var randomChar = passwordRandomizer(passwordCreateItems);
+    password += randomChar;
+  }
 
- return result.join('');
- 
-} //closing tag for passwordCreate
+  return password;
+} 
+ //closing tag for passwordCreate
 
 
 // Assignment Code
