@@ -50,7 +50,7 @@ Used the following to help write code for randommly generating password: [W3Scho
 
 Used this to help know/understand what functions/methods are available: [tutorialspoint](https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm)
 
-Used the following to understand parseInt: [W3Schools](https://www.w3schools.com/jsref/jsref_parseint.asp)
+Used the following to understand parseInt even further than Google Search: [W3Schools](https://www.w3schools.com/jsref/jsref_parseint.asp)
 
 Used the following to produce the prompts for character types: [W3Schools](https://www.w3schools.com/jsref/met_win_confirm.asp)
 
