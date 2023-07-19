@@ -94,7 +94,7 @@ function passwordRandomizer(arr) {
   var randomizerItem = arr[randomizerMath];
 
   return randomizerItem;
-}
+} // closing tag for passwordRandomizer
 
 // Function to create the password
 function passwordCreate() {
@@ -134,8 +134,7 @@ function passwordCreate() {
   }
 
   return password;
-} 
- //closing tag for passwordCreate
+}  //closing tag for passwordCreate
 
 
 // Assignment Code
