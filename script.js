@@ -3,90 +3,17 @@ var numberCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 // Array of special characters to be in the password
 var specialCharacters = [
-  '!',
-  '@',
-  '#',
-  '$',
-  '%',
-  '^',
-  '&',
-  '*',
-  '(',
-  ')',
-  '-',
-  '_',
-  '+',
-  '}',
-  '{',
-  ']',
-  '[',
-  ':',
-  "'",
-  '?',
-  '/',
-  ',',
-  '.',
-  '~'
+  '!',  '@',  '#',  '$',  '%',  '^',  '&',  '*',  '(',  ')',  '-',  '_',  '+',  '}',  '{',  ']',  '[',  ':',  "'",  '?',  '/',  ',',  '.',  '~'
 ];
 
 // Array of lower case letters to be in the password
 var lowerCharacters = [
-  'a',
-  'b',
-  'c',
-  'd',
-  'e',
-  'f',
-  'g',
-  'h',
-  'i',
-  'j',
-  'k',
-  'l',
-  'm',
-  'n',
-  'o',
-  'p',
-  'q',
-  'r',
-  's',
-  't',
-  'u',
-  'v',
-  'w',
-  'x',
-  'y',
-  'z',
+  'a',  'b',  'c',  'd',  'e',  'f',  'g',  'h',  'i',  'j',  'k',  'l',  'm',  'n',  'o',  'p',  'q',  'r',  's',  't',  'u',  'v',  'w',  'x',  'y',  'z',
 ];
 
 // Array of capital letters to be in the password
 var upperCharacters = [
-  'A',
-  'B',
-  'C',
-  'D',
-  'E',
-  'F',
-  'G',
-  'H',
-  'I',
-  'J',
-  'K',
-  'L',
-  'M',
-  'N',
-  'O',
-  'P',
-  'Q',
-  'R',
-  'S',
-  'T',
-  'U',
-  'V',
-  'W',
-  'X',
-  'Y',
-  'Z',
+  'A',  'B',  'C',  'D',  'E',  'F',  'G',  'H',  'I',  'J',  'K',  'L',  'M',  'N',  'O',  'P',  'Q',  'R',  'S',  'T',  'U',  'V',  'W',  'X',  'Y',  'Z',
 ];
 
 // Function for user to be prompt
@@ -94,7 +21,7 @@ function passwordPrompt() {
   // Variable to store password length
     var passwordLength = parseInt(
         prompt('Input the amount of characters you would like for the password'),
-        12
+        10
     );
 
     // Conditional to check for the length of the password being a number & prompts user if it is not
@@ -213,6 +140,7 @@ function passwordCreate() {
  }
 
  return result.join('');
+ 
 } //closing tag for passwordCreate
 
 

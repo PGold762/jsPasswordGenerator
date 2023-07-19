@@ -36,21 +36,23 @@ Download the files from the repo and install on domain. Should work instantly.
 
 This is a responsive website that has a password generator for someone to use.
 
-Link to view: [My Profile Site](https://pgold762.github.io/mod2-profile/)
+Link to view: [My JS Password Generator](https://pgold762.github.io/jsPasswordGenerator/)
 
 Screenshot of website: 
 
-![Picture of My Profile site](./assets/images/screenshot-project2.png "My Profile Site")
+![My JS Password Generator](./assets/images/jspassword-generator.png "JS Password Generator")
 
 ## Credits
 
 Used Google a lot for understanding definitions of different function and variable possibilities, like parseInt [Google](https://www.google.com/search?q=what+does+parseint+mean+in+js&rlz=1C1RXQR_enUS992US992&oq=&aqs=chrome.0.35i39i362l8.105735j0j7&sourceid=chrome&ie=UTF-8)
 
-Used the following to help write code for randommly generating password: [W3Schools] (https://www.w3schools.com/js/js_random.asp)
+Used the following to help write code for randommly generating password: [W3Schools](https://www.w3schools.com/js/js_random.asp)
 
 Used this to help know/understand what functions/methods are available: [tutorialspoint](https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm)
 
+Used the following to understand parseInt: [W3Schools](https://www.w3schools.com/jsref/jsref_parseint.asp)
 
+Used the following to produce the prompts for character types: [W3Schools](https://www.w3schools.com/jsref/met_win_confirm.asp)
 
 ## License
 
